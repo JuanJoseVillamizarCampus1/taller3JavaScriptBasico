@@ -151,9 +151,43 @@ const campus={
         teams:{
             team1:"Mañana",
             teams2:"Mañana",
+            artemisA:true,
+            artemisB:true,
+            artemisC:false,
+            sputnikA:true,
+            sputnikB:true,
+            sputnikC:false,
+            apoloA:true,
+            apoloB:true,
+            apoloC:true,
             piso:8,
-            salones:3,
-            
-        }
+            salones:3,    
+        },
+        camper1:{
+            contactoPersonal:{
+                name:"Jose Rodriguez",
+                age:20,
+                phoneNumber:3102938777,
+                email:"Jose.Rodriguez@gmail.com",
+                barrio:"Cabecera del llano",
+                medioDetransporte:"Metrolinea y moto moto",
+            },
+            contactoCampus:{
+                team: 2,
+                horario:"6am a 1:45pm",
+                salon:"SpunitkA",
+                nivel:"Avanzado",
+                piso:8
+            }     
+        }  
     }
+
+}
+
+
+
+const {trainers:{vermen:{contacto:{email}}}}=campus
+correo=prompt("Digite lo que quiere buscar:")
+if(correo="email vermen"){
+    console.log(email)
 }
